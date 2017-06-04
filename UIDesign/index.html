@@ -22,7 +22,25 @@
         <div  class= "navbar" id="myNavbar">
           <nav>
             <div class="nav-wrapper">
+              <div class="home-icons">
+                <div class="row">
+                  <div class="col s4">
+                <a class="menu" href="#"><i class="material-icons">menu</i></a>
+                  </div>
+                <div class="col s6">
+                  <div class="input-field container-2">
+                  <i class="material-icons prefix">search</i>
+                  <input type="text" id="autocomplete-input" class="autocomplete" placeholder="Search musicians, cafes, pubs etc.">
+                  </div>
+                </div>
+                </div>
+                
+              </div>
               <a href="index.html" class="brand-logo center"><img src="images/logo.png" class="responsive-imglogo"/></a>
+              <div class="home-icons-right">
+                <a class ="location" href="#"><i class="material-icons left">location_on</i>LOCATION</a>
+                <button class="button">LOGIN/SIGNUP</button>
+              </div>
             </div>
           </nav>
         </div>
@@ -34,9 +52,29 @@
         </div>
         
         <div class="layer">
-          <a class ="home-icons" href="#"><i class="material-icons">menu</i></a>
-          <button class="button">LOGIN/SIGNUP</button>
+          <a class ="home-icons" href="#" style="color: #d1d1d1;"><i class="material-icons">menu</i></a>
+          <div class="home-icons-right">
+            <a class ="location" href="#"><i class="material-icons left">location_on</i>LOCATION</a>
+            <button class="button">LOGIN/SIGNUP</button>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <p class="center-align heading">Hello and welcome to the online platform for music and art!</p>
 			    <img src="images/logo.png" style=" display: block; margin: 0 auto; ">
+          <div class="row">
+            <div class="input-field col s4 offset-s3 search-border-left" style="padding-top:5px">
+              <i class="material-icons prefix" style="padding-top:10px">search</i>
+              <input type="text" id="autocomplete-input" class="autocomplete" placeholder="Search musicians, cafes, pubs etc.">
+            </div>
+            <div class="input-field col s2 search-border-right" style="padding-top:5px; padding-left:5px">
+              <select>
+                <option value="musicians">MUSICIANS</option>
+                <option value="cafes">CAFES</option>
+                <option value="restaurants">RESTAURANTS</option>
+              </select>
+            </div>
+          </div>
 		    </div>
       </section>
 
@@ -57,7 +95,9 @@
 
 
      <script>
-     
+     $(document).ready(function() {
+    $('select').material_select();
+      });
       (function() {
         var video = document.getElementById("my-video");
         
@@ -81,7 +121,7 @@
         $(function() {
           $.scrollify({
             section : "section",
-            scrollbars: true,
+            touchScroll:true,
             sectionName: "section-name"
           });
         });
