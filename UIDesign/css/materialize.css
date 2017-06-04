@@ -2365,7 +2365,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button,
+
 input,
 optgroup,
 select,
@@ -5444,7 +5444,7 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  color: #b035aa;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
@@ -5923,21 +5923,21 @@ label {
    ========================================================================== */
 /* Style Placeholders */
 ::-webkit-input-placeholder {
-  color: #d1d1d1;
+  color: #757575;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #d1d1d1;
+  color: #757575;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #d1d1d1;
+  color: #757575;
 }
 
 :-ms-input-placeholder {
-  color: #d1d1d1;
+  color: #757575;
 }
 
 /* Text inputs */
@@ -5956,13 +5956,13 @@ input[type=search],
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
   border-radius: 0;
+  color: #f0f0f0;
   outline: none;
   height: 3rem;
   width: 100%;
   font-size: 1rem;
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
   padding: 0;
   box-shadow: none;
   box-sizing: content-box;
@@ -6027,7 +6027,7 @@ textarea.materialize-textarea[readonly="readonly"] + label {
   color: rgba(0, 0, 0, 0.26);
 }
 
-input:not([type]):focus:not([readonly]),
+/* input:not([type]):focus:not([readonly]),
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
 input[type=email]:focus:not([readonly]),
@@ -6040,8 +6040,8 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+
+ 
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -6057,8 +6057,9 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  
 }
+*/
 
 input:not([type]).valid, input:not([type]):focus.valid,
 input[type=text].valid,
@@ -6263,12 +6264,11 @@ textarea.materialize-textarea + label:after {
 .input-field .prefix {
   position: absolute;
   width: 3rem;
-  font-size: 2rem;
   transition: color .2s;
 }
 
 .input-field .prefix.active {
-  color: #26a69a;
+  color: #f0f0f0;
 }
 
 .input-field .prefix ~ input,
@@ -6822,19 +6822,19 @@ select {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-left: 1px solid #f0f0f0;
   outline: none;
   height: 3rem;
   line-height: 3rem;
   width: 100%;
   font-size: 1rem;
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin: 0 0 5px 0;
+  padding-left: 20px;
   display: block;
 }
 
 .select-wrapper span.caret {
-  color: initial;
+  color: #f0f0f0;
   position: absolute;
   right: 0;
   top: 0;
