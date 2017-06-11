@@ -105,57 +105,20 @@ top: 5%;
     background: transparent;
 }
 
-
-
-
-.container-2{
-  width: 300px;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-}
-.container-2 input#text{
-  width: 10px;
-  background: #2b303b;
-  border: none;
-  font-size: 10pt;
-  position: absolute;
-  float: left;
-  color: #262626;
-  padding-left: 35px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
- 
-  -webkit-transition: width .55s ease;
-  -moz-transition: width .55s ease;
-  -ms-transition: width .55s ease;
-  -o-transition: width .55s ease;
-  transition: width .55s ease;
-}
-.container-2 input#text::-webkit-input-placeholder {
-   color: #65737e;
-}
- 
-.container-2 input#text:-moz-placeholder { /* Firefox 18- */
-   color: #65737e;  
-}
- 
-.container-2 input#text::-moz-placeholder {  /* Firefox 19+ */
-   color: #65737e;  
-}
- 
-.container-2 input#text:-ms-input-placeholder {  
-   color: #65737e;  
+.filter-border {
+    border: 1px solid #212121;
+    border-radius: 56px;
+    background: transparent;
 }
 
-.container-2 input#text:focus, .container-2 input#text:active{
-  outline:none;
-  width: 300px;
-}
- 
-.container-2:hover input#text{
-width: 300px;
-}
- 
+.bg{
+
+ background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+} 
+
