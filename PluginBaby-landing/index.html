@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+		<meta charset="utf-8">
+		<title>PluginBaby | Landing Page</title>
+		
+		<!-- Set Keywords & Description -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="." />
+		
+		<!-- Set Viewport Options -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		 <!--Include Typekit -->
+		<script type="text/javascript" src="../use.typekit.net/jbf6suv.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<!-- Include Stylesheets -->
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<style>
+
+			
+
+		</style>
+
+
+		<!-- Include Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="assets/js/lib/jquery.easing.min.js"></script>
+		<script src="assets/js/lib/modernizr-2.6.2.min.js"></script>
+		<script src="assets/js/lib/waypoints.min.js"></script>
+		<script src="assets/js/lib/respond.min.js"></script>
+		
+
+	</head>
+	
+	<body>
+
+		<div id="content" class="trans-contact">
+
+			<div class="loading-modal">
+				<div class="logo"><img src="assets/img/logo.png" alt="diagonal"/></div>
+				<div class="text" id="loading-percent">0%</div>
+			</div><!-- end .loading-modal -->
+
+			<section class="contact trans-contact">
+
+				<div class="contact-text">
+
+					<div class="close"><a href="javascript:Contact.showContact();"><img src="assets/img/close-btn.svg" alt="close" class="svg-raw"/></a></div>
+
+					<h2>Ready to<br/> <span class="red-hit">get started?</span></h2>
+
+					<div id="contact-content">
+
+						To order T-SHIRTS please leave ur details below. 
+
+						<div class="contact-form">
+
+							<div id="contact-form-error"></div>
+
+							<form action="#" method="post" onsubmit="return Contact.checkForm('.contact-form');" id="form-contact">
+
+								<p><input name="name" id="form-name" value="FULL NAME *" class="formstxt req" onclick="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" type="text"></p>
+								<p><input name="email" id="form-email" value="EMAIL ADDRESS *" class="formstxt req" onclick="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" type="text"></p>
+								<p><input name="phone" id="form-phone" value="PHONE *" class="formstxt req" onclick="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" type="text"></p>
+								<p><input name="tshirts" id="form-tshirts" value="NUMBER OF T-SHIRTS REQUIRED *" class="formstxt req" onclick="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" type="text"></p>
+								<p><input value="SUBMIT FORM" class="formsbtn" type="submit"></p>
+
+							</form>
+
+						</div><!-- end .contact-form -->
+
+					</div><!-- end #contact-content -->
+				
+				</div><!-- end .contact-text -->
+
+			</section><!-- end .contact -->
+
+			<header class="top">
+
+				<div class="parallax-top">
+
+					<div class="overlay"></div>
+					<div style="position: fixed; z-index: 1; width: 100%; height: 100%">
+						<iframe id="video" frameborder="0"
+							src="https://www.youtube-nocookie.com/embed/FwPV-Hm_gVE?modestbranding=1&title=null&enablejsapi=1&autoplay=1&loop=1&ap=%2526fmt%3D18&controls=0&iv_load_policy=3&playlist=FwPV-Hm_gVE">
+						</iframe>
+					</div>
+
+					<!--<video autoplay loop class="headervid">
+						<source src="assets/vid/videoplayback.m4v" type="video/mp4" />
+						<source src="assets/vid/videoplayback.webm" type="video/webm" /> 
+						<p>Your browser doesn't support video</p>
+					</video>-->
+					<div class="logo"><a href="#"><img src="assets/img/logobg.png" alt="logo"/></a></div>
+					<div class="text">
+
+						<div class="container">
+							<div class="parent"><img src="assets/img/bgimage.png" /></div>
+							<br/>							
+							<h2>BE A PART OF THE NEW ERA</h2><br/>
+							<a href="javascript:Contact.showContact();" ><h3>We would love to hear it from you, write us!</h3></a>
+							<!--<button type="button" onclick="muteme(video)">mute</button>-->
+						</div><!-- end .container -->
+
+					</div><!-- end .text -->
+
+					<div class="scroll">
+
+						
+					</div>
+				
+				</div><!-- end .parallax-top -->
+
+			</header>
+
+
+		</div><!-- end #content -->
+
+		<!-- scripts load -->
+		<script src="assets/js/Contact.js"></script>
+		<script src="assets/js/Loader.js"></script>
+		<script src="assets/js/Main.js"></script>
+
+	</body>
+
+
+
+</html>
